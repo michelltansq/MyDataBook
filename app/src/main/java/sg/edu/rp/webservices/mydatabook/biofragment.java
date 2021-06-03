@@ -7,12 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link BioFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class biofragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -20,22 +17,15 @@ public class biofragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    TextView tvBloodType, tvHeight;
+    Button btnEdit;
+
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    public biofragment() {
-        // Required empty public constructor
-    }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment BioFragment.
-     */
     // TODO: Rename and change types and number of parameters
     public static biofragment newInstance(String param1, String param2) {
         biofragment fragment = new biofragment();
