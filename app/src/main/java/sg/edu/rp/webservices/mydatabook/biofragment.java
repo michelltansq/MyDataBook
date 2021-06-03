@@ -13,7 +13,7 @@ import android.view.ViewGroup;
  * Use the {@link BioFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BioFragment extends Fragment {
+public class biofragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class BioFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BioFragment() {
+    public biofragment() {
         // Required empty public constructor
     }
 
@@ -37,8 +37,8 @@ public class BioFragment extends Fragment {
      * @return A new instance of fragment BioFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BioFragment newInstance(String param1, String param2) {
-        BioFragment fragment = new BioFragment();
+    public static biofragment newInstance(String param1, String param2) {
+        biofragment fragment = new biofragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
