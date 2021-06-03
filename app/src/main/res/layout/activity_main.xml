@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:text="C347 - Android Programming II \n          Republic Polytechnic"
+        android:textSize="24dp"/>
+
     <!-- The main content view -->
     <FrameLayout
         android:id="@+id/content_frame"
