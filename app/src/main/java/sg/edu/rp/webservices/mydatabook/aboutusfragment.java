@@ -1,5 +1,6 @@
 package sg.edu.rp.webservices.mydatabook;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,12 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link aboutusfragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.net.URL;
+
 public class aboutusfragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -23,19 +22,12 @@ public class aboutusfragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    ImageView ivRPLogo;
 
     public aboutusfragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment aboutusfragment.
-     */
     // TODO: Rename and change types and number of parameters
     public static aboutusfragment newInstance(String param1, String param2) {
         aboutusfragment fragment = new aboutusfragment();
@@ -53,6 +45,17 @@ public class aboutusfragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        ivRPLogo.findViewById(R.id.ivRPLogo);
+
+        try {
+            URL thumb_u = new URL("https://upload.wikimedia.org/wikipedia/commons/8/80/Republic_Polytechnic_Logo.jpg");
+            Drawable thumb_d = Drawable.createFromStream(thumb_u.openStream(), "src");
+            ivRPLogo.setImageDrawable(thumb_d);
+        }
+        catch (Exception e) {
+            // handle it
+        }
+
     }
 
     @Override
