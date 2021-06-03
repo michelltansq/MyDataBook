@@ -3,13 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BioFragment">
+    tools:context=".biofragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBloodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="blood type"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="height"
+            android:textSize="30dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
     <Button
         android:id="@+id/btnEdit"
